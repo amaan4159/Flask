@@ -1,0 +1,25 @@
+{
+    "params":
+    {
+        "local_server":"True",
+        "local_uri": "mysql+pymysql://root:@localhost/coding blogs",
+        "prod_uri": "mysql+pymysql://root:@localhost/coding blogs",
+        "x_url": "https://x.com/codingblogs",
+        "fb_url": "https://facebook.com/codingblogs",
+        "gh_url": "https://github.com/codingblogs",
+        "blog_name": "CodingBlogs",
+        "tagline": "A blog for the coders.",
+        "gmail-user": "codingproject07@gmail.com",
+        "gmail-password": "imqmdrbtrdhyqcwl",
+        "about_text": "coming soon...",
+        "no_of_posts": 3,
+        "login_logo": "login_logo.jpg",
+        "login_image": "home-bg.jpg",
+        "admin_username": "amaan",
+        "admin_pass": "9cgpa",
+        "upload_location": "location where you want to upload the files"
+
+
+    }
+
+}

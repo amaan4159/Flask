@@ -1,0 +1,55 @@
+*************************************************flask syntax***********************************************************
+
+from flask import Flask, render_template
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return render_template('index.html')
+
+@app.route("/about")
+def about():
+    return render_template('about.html')
+
+@app.route("/contact")
+def contact():
+    return render_template('contact.html')
+
+app.run(debug=True)
+
+
+************************************************************************************************************************
+
+
+{{ url_for('static',filename='_') }}
+
+
+******************************************************JINJA TEMPLATE*****************************************************
+
+{% extends "base.html" %}
+{% block title %}Members{% endblock %}
+{% block content %}
+  <ul>
+  {% for user in users %}
+    <li><a href="{{ user.url }}">{{ user.username }}</a></li>
+  {% endfor %}
+  </ul>
+{% endblock %}
+
+
+******************************************************php************************************************************
+
+http://localhost/phpmyadmin/
+
+
+**************************************************config json********************************************************
+
+{{params['']}}
+
+**********************************************comments in the code*************************************************
+
+i have commented out the flask mail and smtp code from the main.py as google has disabled the access to less secure apps and so it will not
+work unless the app security standards match the google terms.
+
+I have also commented out the file uploader syntax for now as there is no need for it as of now for me.
+also need to change the file_location in json when using file uploader
