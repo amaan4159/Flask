@@ -10,7 +10,7 @@ from flask_mail import Mail
 import os
 import math
 
-with open('templates/config.json', 'r') as c:
+with open('Flask/templates/config.json', 'r') as c:
     params = json.load(c)["params"]
 local_server = True
 
